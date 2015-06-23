@@ -1,0 +1,12 @@
+/* Empty. Add your own CSS if you like */
+
+.txtbox { 
+    border: 1px solid #999; 
+    outline:0; 
+    height:22px; 
+    width: 100%; 
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+ } 

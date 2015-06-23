@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane> 
+       <ion-header-bar class="bar-light">  
+		<button class="button icon ion-navicon"></button>
+		<h1 class="title">Menu</h1>
+		<a class="button button-icon icon ion-refresh "></a>
+		</ion-header-bar>       
+
+    <ion-content padding="true">
+
+	<label class="item item-input">
+		<span class="input-label">Quantidade:</span>
+		<input type="number" placeholder="0" id="DQuantidade" >
+	</label >
+	</label>
+<button id="BtnInventario" class="button button-full button-positive">Confirmar</button>
+		
+	
+	<div class="list">
+  <label class="item item-input">
+    <span class="input-label">N&#176; Invent&#225;rio:</span>
+    <input type="text" placeholder="N&#227;o Informado" id="DNInventario" readonly >
+  </label>
+  <label class="item item-input">
+    <span class="input-label">N&#176; O.S:</span>
+    <input type="text" placeholder="N&#227;o Informado" id="DNOs" readonly >
+  </label>
+  <label class="item item-input ">
+    <span class="input-label">Cod Endere&#231;o:</span>
+    <input type="text" placeholder="N&#227;o Informado" id="DCodEndereco" readonly >
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Cod Produto:</span>
+    <input type="text" placeholder="N&#227;o Informado" id="DCodPooduto" readonly >
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="N&#227;o Informado" id="DDescricao" readonly >
+  </label>
+	</div>
+
+	<div class="row">
+	  <div class="col">
+		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Dpto</span>
+		<input type="text" placeholder="Dpto" id="DDpto" readonly >
+		</label>
+		</div>
+	</div>
+  <div class="col">
+  		<div class="list">
+		<label class="item item-input item-floating-label" >
+		<span class="input-label">Rua</span>
+		<input type="text" placeholder="Rua" id="DRua" readonly>
+		</label>
+		</div>
+  </div>
+  <div class="col">
+  		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Predio</span>
+		<input type="text" placeholder="Predio" id="DPredio" readonly >
+		</label>
+		</div>
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="col">
+  		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Nivel</span>
+		<input type="text" placeholder="Nivel" id="Dnivel" readonly >
+		</label>
+		</div>	
+  </div>
+  <div class="col">
+  		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Apto</span>
+		<input type="text" placeholder="Apto" id="DApto" readonly >
+		</label>
+		</div>
+  </div>
+	</div>
+	
+	</ion-content>
+    </ion-pane>
+	
+  </body>
+</html>
